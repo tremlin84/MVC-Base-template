@@ -1,0 +1,23 @@
+﻿
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+    @Html.ActionLink("Nav brand", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+    <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+            </li>
+            <li class="nav-item">
+                @Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+            </li>
+            <li class="nav-item">
+                @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
+            </li>
+        </ul>
+    </div>
+</nav>
